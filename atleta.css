@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, aqua, rgb(160, 245, 239));
+    backdrop-filter: blur(5px);
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(0, 230, 230), rgb(146, 230, 225));
+    backdrop-filter: blur(3px);
+    width: 100%;
+    position: sticky;
+
+    /* Chave para fixar o cabeçalho */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 30px 10px;
+}
+
+.saiba_mais {
+    justify-content: flex;
+    padding: 5%;
+
+}
+
+.saiba_mais p {
+    padding: 2%;
+    margin-top: -3.5%;
+    margin-left: 1%;
+}
+
+.atleta_top {
+    margin-top: -5%;
+    margin-left: 25%;
+}
+
+.atleta_top h5 {
+    font-size: x-large
+}
+
+.atleta_top p {
+    margin-left: 10%;
+}
+
+.atleta {
+    display: flex;                 /* Define o layout em colunas */
+   /* align-items: center;      */     /* Alinha verticalmente ao centro */
+    justify-content: center;       /* Centraliza os itens horizontalmente */
+    gap: 5px;                     /* Espaço entre o texto e a imagem */
+    padding: 20px;                 /* Espaçamento interno */
+
+}
+
+.atleta_conteudo {
+    max-width: 70%;
+}
+
+.circulo img {
+    border-radius: 50%;
+    margin-left: 12%;
+    margin-bottom: -10%;
+    max-width: 100%;
+}
+
+.circulo {
+    background-color: rgb(0, 173, 173);
+    border-radius: 70%;
+    padding: 2%;
+    margin-top: -4%;
+    max-width: 70%;
+   
+}
+
+.button {
+    background-color: rgb(0, 173, 173);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 15px; 
+    width: 10%;
+    text-align: center;
+    margin-left: 10%;
+    padding: 10px; /* Adiciona espaço interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 78%;
+}
+
+.button a {
+    color: white;               /* Cor do texto */
+    text-decoration: none;       /* Remove o sublinhado */
+    font-weight: bold;           /* Negrito para destaque */
+    display: inline-block;       /* Para centralizar o link no botão */
+}
+
+.button:hover {
+    transform: scale(1.05);               /* Aumenta o botão ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 173, 173, 0.5);  /* Adiciona sombra */
+}
+
+.button:active {
+    transform: scale(0.90);               /* Diminui o botão ao clicar */
+    box-shadow: 0px 3px 10px rgba(0, 173, 173, 0.7);  /* Sombra mais escura ao clicar */
+}
+
+.rede_social {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+
+.rede_social a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}

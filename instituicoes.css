@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, aqua, rgb(160, 245, 239));
+    backdrop-filter: blur(5px);
+    
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(0, 230, 230), rgb(146, 230, 225));
+    backdrop-filter: blur(3px);
+    width: 100%;
+    position: sticky;
+
+    /* Chave para fixar o cabeçalho */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 30px 10px;
+}
+
+.saiba_mais {
+    justify-content: flex;
+    padding: 5%;
+
+}
+
+.saiba_mais p {
+    padding: 2%;
+    margin-top: -3.5%;
+    margin-left: 1%;
+}
+
+.insti_top {
+    margin-top: -5%;
+    margin-left: 25%;
+}
+
+.insti_top h5 {
+    font-size: x-large
+}
+
+.insti_top p {
+    margin-left: 10%;
+}
+.instituicao {
+    display: flex;                 /* Define o layout em colunas */
+   /* align-items: center;      */     /* Alinha verticalmente ao centro */
+    justify-content: center;       /* Centraliza os itens horizontalmente */
+    gap: 5px;                     /* Espaço entre o texto e a imagem */
+    padding: 20px;                 /* Espaçamento interno */
+    position: static;
+    margin-left: -10%;
+
+}
+
+.insti_conteudo {
+    max-width: 60%;
+    
+}
+
+.circulo img {
+    border-radius: 50%;
+    margin-bottom: -12%;
+    /*max-width: 100%;*/
+    margin-left: 12%;
+}
+
+.circulo {
+    background-color: rgb(0, 173, 173);
+    border-radius: 70%;
+    padding: 2%;
+    margin-top: -4%;
+    max-width: 30%;
+    margin-left: 82%;
+    position: fixed;
+
+   
+}
+
+.detalhes {
+    position: fixed;
+    max-width: 60%;
+}
+
+button {
+    background-color: rgb(0, 173, 173);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 15px; 
+    padding: 0.5%;
+    width: 10%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30%;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);               /* Aumenta o botão ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 173, 173, 0.5);  /* Adiciona sombra */
+}
+
+button:active {
+    transform: scale(0.90);               /* Diminui o botão ao clicar */
+    box-shadow: 0px 3px 10px rgba(0, 173, 173, 0.7);  /* Sombra mais escura ao clicar */
+}
+
+
+.social1 {
+   margin-top: -10%;
+   margin-left: 80%;
+}
+
+.social1 a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.social2 {
+    margin-top: -2%;
+    margin-bottom: 2%;
+    margin-left: 90%;
+    
+}
+
+.social2 a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}

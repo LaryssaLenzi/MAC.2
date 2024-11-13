@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-image: linear-gradient(to top, aqua, rgb(160, 245, 239));
+    backdrop-filter: blur(5px);
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(0, 230, 230), rgb(146, 230, 225));
+    backdrop-filter: blur(3px);
+    width: 100%;
+    position: sticky;
+    /* Chave para fixar o cabeçalho */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 30px 10px;
+}
+
+main {
+    margin-top: -7%;
+    padding: 50px 0;
+}
+
+/*HOME*/
+
+.home {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.home img {
+    margin-left: 60%;
+    margin-top: -7%;
+
+}
+
+.home_p {
+    margin-top: -35%;
+    text-align: center;
+    margin-left: -58%;
+    font-family: "arial";
+    font-size: 255%;
+}
+
+/*LNHA QUE SEPARA OS TÓPICOS*/
+
+hr {
+    display: block;
+    margin-top: -2%;
+    margin-bottom: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: black;
+}
+
+/*SOBRE NÓS*/
+
+.sobre_nos {
+    margin-top: 20%;
+    margin-bottom: 8%;
+}
+
+.sobre_nos_topo {
+    justify-content: flex;
+    padding: 5%;
+
+}
+
+.sobre_nos_topo p {
+    padding: 2%;
+    margin-top: -3.5%;
+    margin-left: 1%;
+}
+
+.sobre_nos_titulo {
+    font-family: aria;
+    text-align: center;
+    font-size: 255%;
+    margin-left: -75%;
+}
+
+.sobre_nos_conteudo {
+    display: flex;                 /* Define o layout em colunas */
+    align-items: center;           /* Alinha verticalmente ao centro */
+    justify-content: center;       /* Centraliza os itens horizontalmente */
+    gap: 20px;                     /* Espaço entre o texto e a imagem */
+    padding: 20px;                 /* Espaçamento interno */
+
+}
+.sobre_nos_conteudo_p {
+    flex: 1;                       /* O texto ocupa o espaço necessário */
+    text-align: justify;
+    width: 45%;
+}
+
+.sobre_nos_conteudo img {
+    max-width: 520px;              /* Define a largura máxima da imagem */
+    height: auto;                  /* Mantém a proporção da imagem */
+    object-fit: contain;           /* Ajusta a imagem para caber */
+
+}
+
+/*ATLETAS*/
+
+.atletas_topo {
+    justify-content: flex;
+    padding: 5%;
+
+}
+
+.atletas_topo p {
+    padding: 2%;
+    margin-top: -3.5%;
+    margin-left: 1%;
+
+}
+
+.atletas_titulo {
+    font-family: aria;
+    text-align: center;
+    font-size: 255%;
+    
+}
+
+
+.atletas_conteudo {
+    flex: 1%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    padding: 1%;
+
+}
+
+.atleta img {
+    border-radius: 50%;
+    margin-left: 10%;
+    max-width: 90%;
+
+}
+
+.ciculo {
+    background-color: rgb(0, 173, 173);
+    border-radius: 70%;
+    padding: 2%;
+
+}
+
+.atleta h5 {
+    margin-top: 5%;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+/*ATLETAS BOTÃO*/
+
+.atleta_botao {
+    background-color: rgb(0, 173, 173);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 15px; 
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding: 10px; /* Adiciona espaço interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.atleta_botao a {
+    color: white;               /* Cor do texto */
+    text-decoration: none;       /* Remove o sublinhado */
+    font-weight: bold;           /* Negrito para destaque */
+    display: inline-block;       /* Para centralizar o link no botão */
+}
+
+.atleta_botao:hover {
+    transform: scale(1.05);               /* Aumenta o botão ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 173, 173, 0.5);  /* Adiciona sombra */
+}
+
+.atleta_botao:active {
+    transform: scale(0.95);               /* Diminui o botão ao clicar */
+    box-shadow: 0px 3px 10px rgba(0, 173, 173, 0.7);  /* Sombra mais escura ao clicar */
+}
+
+
+
+/*INSTITUIÇÕES*/
+
+.instituicoes_topo {
+    justify-content: flex;
+    padding: 5%;
+
+}
+
+.instituicoes_topo p {
+    padding: 2%;
+    margin-top: -3.5%;
+    margin-left: 1%;
+}
+
+.instituicoes_titulo {
+    font-family: aria;
+    text-align: center;
+    font-size: 255%;
+}
+
+.instituicoes_conteudo {
+    flex: 1%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+.quadra {
+    background-color: rgb(0, 173, 173);
+    height: 105%;
+    width: 97%;
+    border-radius: 25%;
+}
+
+.quadra img {
+    max-width: 67%; 
+    margin-bottom: -79%;
+    margin-left: 37%; 
+    border-radius: 50%;
+}
+
+.instituicao_maps img {
+    max-width: 20%;
+    border-radius: 50%; 
+    margin-top: -17%; 
+    margin-left: 79%;
+}
+
+.escrita {
+    margin-top: 15px; 
+    align-items: center;
+
+}
+
+/*INSTITUIÇÃO BOTÃO*/
+
+
+.instituicao_botao {
+    background-color: rgb(0, 173, 173);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 15px; 
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding: 10px; /* Adiciona espaço interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instituicao_botao a {
+    color: white;               /* Cor do texto */
+    text-decoration: none;       /* Remove o sublinhado */
+    font-weight: bold;           /* Negrito para destaque */
+    display: inline-block;       /* Para centralizar o link no botão */
+}
+
+.instituicao_botao:hover {
+    transform: scale(1.05);               /* Aumenta o botão ao passar o mouse */
+    box-shadow: 0px 4px 15px rgba(0, 173, 173, 0.5);  /* Adiciona sombra */
+}
+
+.instituicao_botao:active {
+    transform: scale(0.90);               /* Diminui o botão ao clicar */
+    box-shadow: 0px 3px 10px rgba(0, 173, 173, 0.7);  /* Sombra mais escura ao clicar */
+}
+
+/*BOTÃO ENCONTRE MAIS INSTITUIÇÕES*/
+
+.instituicao_botao2 {
+    background-color: rgb(0, 173, 173);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 15px; 
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 20%;
+    padding: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instituicao_botao2 a {
+    color: white;              
+    text-decoration: none;
+    font-weight: bold;          
+    display: inline-block;       
+}
+
+.instituicao_botao2:hover {
+    transform: scale(1.05);              
+    box-shadow: 0px 4px 15px rgba(0, 173, 173, 0.5);  
+}
+
+.instituicao_botao2:active {
+    transform: scale(0.90);              
+    box-shadow: 0px 3px 10px rgba(0, 173, 173, 0.7);  
+}
+
+/* Rodapé principal */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Seção de contatos (rodape1) */
+.rodape1 {
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 3%;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    font-size: 15px;
+    color: #000000;
+}
+
+/* Seção de redes sociais (rodape2) */
+
+.rod_2 {
+    background-color: rgba(0, 109, 173, 0.493);
+    padding: 1%;
+    width: 100%;
+}
+.rodape2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    
+}
+
+.social-item {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-item img, .logo_rodape img {
+    width: 40px;
+}
+
+.social-item a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+
+

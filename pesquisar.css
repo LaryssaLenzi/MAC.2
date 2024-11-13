@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, aqua, rgb(160, 245, 239));
+    backdrop-filter: blur(5px);
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(0, 230, 230), rgb(146, 230, 225));
+    backdrop-filter: blur(3px);
+    width: 100%;
+    position: sticky;
+    /* Chave para fixar o cabeçalho */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 30px 10px;
+}
+
+
+.pesq{
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 20%;
+    position: relative;
+
+}
+
+#listainsti {
+
+    display: flex;
+    flex-wrap: wrap;             /* Permite que os itens se ajustem em várias linhas */
+    gap: 10px;                   /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+#listainsti li{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;                /* Define o tamanho dos itens em quadrado */
+    height: 200px;
+    background: #f6f6f6;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor dos itens */
+    
+}
+
+#listainsti li:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+
+}
+
+#listainsti li img{
+    width: 80px;                 /* Ajuste o tamanho da imagem */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+#listainsti li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.saiba_mais {
+    margin-top: 15%;
+    background-color: #066981;
+    color: white;
+    border: none;
+    padding: 2px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.saiba_mais:hover {
+    background-color: #00b39b;
+}
+
+.saiba_mais:active {
+    transform: scale(0.95);
+}
+
+.filtro {
+    position: absolute;  /* Posiciona o filtro de forma absoluta em relação ao container */
+    top: 150px;  /* Ajuste a posição vertical conforme necessário */
+    left: 20px;  /* Ajuste a posição horizontal conforme necessário */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.384);  /* Fundo semi-transparente para destacar */
+    z-index: 10;  /* Garante que o filtro fique acima da lista */
+  
+}
+
+.hr.filtro {
+    width: 110%;
+}
+
+h3 {
+    position: absolute;
+    margin-top:7%;
+}
